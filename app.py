@@ -4,7 +4,7 @@ web = Flask(__name__)
 
 @web.route('/', methods=['GET'])
 def index():
-    return render_template('index.html')
+    return "<h1>Hello heroku</h1>"
 
 
 if __name__ == '__main__':
