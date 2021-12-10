@@ -1,12 +1,12 @@
 from flask import Flask,render_template,request
 
-web = Flask(__name__)
+app = Flask(__name__)
 
-@web.route('/', methods=['GET'])
+@app.route('/')
 def index():
     return "<h1>Hello heroku</h1>"
 
 
 if __name__ == '__main__':
     # web.debug = True
-    web.run()
+    app.run()
